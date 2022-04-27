@@ -85,6 +85,7 @@ class BinarySearchTree {
         if(node.right !== null) helper(node.right);
       }
       helper(current);
+      return data;
   }
 
   DFSPostOrder() {
@@ -97,14 +98,13 @@ class BinarySearchTree {
         data.push(node.value);
       }
       helper(current);
-      
       return data;
   }
   
   // traverse the left then visit the root node then traverse the right
   DFSInOrder() {
   	let data = [],
-    		current = this.root
+    	current = this.root
         
        	function helper(node) {
           if(node.left !== null) helper(node.left);
