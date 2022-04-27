@@ -77,7 +77,7 @@ class BinarySearchTree {
 
   DFSPreOrder() {
     let data = [],
-        current = this.root;
+    current = this.root;
 
       function helper(node) {
         data.push(node.value);
